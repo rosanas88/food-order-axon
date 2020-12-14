@@ -5,6 +5,8 @@
 #### Start Axon Server with:
 docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver
 
+### Console Axon Server
+http://localhost:8024/
 
 #### Place an order and copy the order id:
 
