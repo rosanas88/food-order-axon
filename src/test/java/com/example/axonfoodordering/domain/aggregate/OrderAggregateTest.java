@@ -1,4 +1,4 @@
-package com.example.axonfoodordering.aggregate;
+package com.example.axonfoodordering.domain.aggregate;
 
 import com.example.axonfoodordering.application.commands.PlaceOrderCommand;
 import com.example.axonfoodordering.application.commands.ShipOrderCommand;
