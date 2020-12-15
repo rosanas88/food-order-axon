@@ -1,12 +1,12 @@
-package com.example.axonfoodordering.aggregate;
+package com.example.axonfoodordering.domain.aggregate;
 
-import com.example.axonfoodordering.commands.ConfirmOrderCommand;
-import com.example.axonfoodordering.commands.PlaceOrderCommand;
-import com.example.axonfoodordering.commands.ShipOrderCommand;
-import com.example.axonfoodordering.events.OrderConfirmedEvent;
-import com.example.axonfoodordering.events.OrderPlacedEvent;
-import com.example.axonfoodordering.events.OrderShippedEvent;
-import com.example.axonfoodordering.exception.OrderNotConfirmedException;
+import com.example.axonfoodordering.application.commands.ConfirmOrderCommand;
+import com.example.axonfoodordering.application.commands.PlaceOrderCommand;
+import com.example.axonfoodordering.application.commands.ShipOrderCommand;
+import com.example.axonfoodordering.domain.events.OrderConfirmedEvent;
+import com.example.axonfoodordering.domain.events.OrderPlacedEvent;
+import com.example.axonfoodordering.domain.events.OrderShippedEvent;
+import com.example.axonfoodordering.domain.exception.OrderNotConfirmedException;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;

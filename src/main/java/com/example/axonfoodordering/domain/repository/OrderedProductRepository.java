@@ -1,7 +1,7 @@
-package com.example.axonfoodordering.repository;
+package com.example.axonfoodordering.domain.repository;
 
-import com.example.axonfoodordering.query.model.OrderStatus;
-import com.example.axonfoodordering.query.model.OrderedProduct;
+import com.example.axonfoodordering.domain.model.OrderStatus;
+import com.example.axonfoodordering.domain.model.OrderedProduct;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

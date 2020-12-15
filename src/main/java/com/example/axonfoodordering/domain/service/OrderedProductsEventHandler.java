@@ -1,19 +1,17 @@
-package com.example.axonfoodordering.service;
+package com.example.axonfoodordering.domain.service;
 
-import com.example.axonfoodordering.events.OrderConfirmedEvent;
-import com.example.axonfoodordering.events.OrderPlacedEvent;
-import com.example.axonfoodordering.events.OrderShippedEvent;
-import com.example.axonfoodordering.exception.OrderNotConfirmedException;
-import com.example.axonfoodordering.exception.OrderNotFoundException;
+import com.example.axonfoodordering.domain.events.OrderConfirmedEvent;
+import com.example.axonfoodordering.domain.events.OrderPlacedEvent;
+import com.example.axonfoodordering.domain.events.OrderShippedEvent;
+import com.example.axonfoodordering.domain.exception.OrderNotFoundException;
 import com.example.axonfoodordering.query.FindAllOrderedProductsQuery;
 import com.example.axonfoodordering.query.GetOrderById;
-import com.example.axonfoodordering.query.model.OrderStatus;
-import com.example.axonfoodordering.query.model.OrderedProduct;
-import com.example.axonfoodordering.repository.OrderedProductRepository;
+import com.example.axonfoodordering.domain.model.OrderStatus;
+import com.example.axonfoodordering.domain.model.OrderedProduct;
+import com.example.axonfoodordering.domain.repository.OrderedProductRepository;
 import org.axonframework.eventhandling.EventHandler;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

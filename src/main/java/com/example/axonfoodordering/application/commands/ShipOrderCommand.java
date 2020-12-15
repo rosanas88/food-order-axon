@@ -1,6 +1,6 @@
-package com.example.axonfoodordering.commands;
+package com.example.axonfoodordering.application.commands;
 
-import com.example.axonfoodordering.query.model.OrderStatus;
+import com.example.axonfoodordering.domain.model.OrderStatus;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 public class ShipOrderCommand {

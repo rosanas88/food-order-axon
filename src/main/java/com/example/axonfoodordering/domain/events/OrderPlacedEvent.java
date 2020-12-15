@@ -1,4 +1,4 @@
-package com.example.axonfoodordering.events;
+package com.example.axonfoodordering.domain.events;
 
 public class OrderPlacedEvent {
 

@@ -1,4 +1,4 @@
-package com.example.axonfoodordering.commands;
+package com.example.axonfoodordering.application.commands;
 
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 

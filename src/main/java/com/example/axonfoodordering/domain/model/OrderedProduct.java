@@ -1,4 +1,4 @@
-package com.example.axonfoodordering.query.model;
+package com.example.axonfoodordering.domain.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

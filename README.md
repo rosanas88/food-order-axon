@@ -1,6 +1,6 @@
 # Getting started with Axon Framework
 
-## Simple Ordering food service using Axon Framework
+## Simple Food Ordering service using Axon Framework
 
 #### Start Axon Server with:
 docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver
@@ -25,4 +25,5 @@ Example:  curl -vvv -X GET http://localhost:8080/orders
 
 
 #### To do:
-- Try to implement Saga to track order
+- Try to implement Hexagonal Architecture;
+- Try to implement Saga to track order;

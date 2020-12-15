@@ -1,16 +1,15 @@
-package com.example.axonfoodordering.controllers;
+package com.example.axonfoodordering.application.rest;
 
-import com.example.axonfoodordering.commands.ConfirmOrderCommand;
-import com.example.axonfoodordering.commands.PlaceOrderCommand;
-import com.example.axonfoodordering.commands.ShipOrderCommand;
+import com.example.axonfoodordering.application.commands.ConfirmOrderCommand;
+import com.example.axonfoodordering.application.commands.PlaceOrderCommand;
+import com.example.axonfoodordering.application.commands.ShipOrderCommand;
 import com.example.axonfoodordering.query.FindAllOrderedProductsQuery;
 import com.example.axonfoodordering.query.GetOrderById;
-import com.example.axonfoodordering.query.model.OrderedProduct;
+import com.example.axonfoodordering.domain.model.OrderedProduct;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

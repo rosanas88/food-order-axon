@@ -1,4 +1,4 @@
-package com.example.axonfoodordering.query.model;
+package com.example.axonfoodordering.domain.model;
 
 public enum OrderStatus {
     PLACED, CONFIRMED, SHIPPED;

@@ -1,12 +1,13 @@
 package com.example.axonfoodordering.aggregate;
 
-import com.example.axonfoodordering.commands.PlaceOrderCommand;
-import com.example.axonfoodordering.commands.ShipOrderCommand;
-import com.example.axonfoodordering.events.OrderConfirmedEvent;
-import com.example.axonfoodordering.events.OrderPlacedEvent;
-import com.example.axonfoodordering.events.OrderShippedEvent;
-import com.example.axonfoodordering.exception.OrderNotConfirmedException;
-import com.example.axonfoodordering.query.model.OrderStatus;
+import com.example.axonfoodordering.application.commands.PlaceOrderCommand;
+import com.example.axonfoodordering.application.commands.ShipOrderCommand;
+import com.example.axonfoodordering.domain.aggregate.OrderAggregate;
+import com.example.axonfoodordering.domain.events.OrderConfirmedEvent;
+import com.example.axonfoodordering.domain.events.OrderPlacedEvent;
+import com.example.axonfoodordering.domain.events.OrderShippedEvent;
+import com.example.axonfoodordering.domain.exception.OrderNotConfirmedException;
+import com.example.axonfoodordering.domain.model.OrderStatus;
 import org.axonframework.test.aggregate.AggregateTestFixture;
 import org.axonframework.test.aggregate.FixtureConfiguration;
 import org.junit.jupiter.api.BeforeEach;
